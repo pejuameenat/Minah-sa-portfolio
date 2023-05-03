@@ -33,6 +33,7 @@ body{
     margin:0 auto;
 
 }
+
 header{
     padding: 1rem 0;
     display: flex;
@@ -162,4 +163,30 @@ footer{
   }
   .foot-div span{
       color: cornflowerblue;
+  }
+
+@media only screen and (max-width:992px){
+    nav ul {
+        display: none;
+    }
+     
+    .text-div, .img-div{
+        grid-column: span 12;
+    }
+
+ .footer-div{
+    grid-column:  span 6;
+ }
+ 
+  }
+  @media only screen and (max-width:540px){
+      .footer-div{
+        grid-column: span 12;
+      }
+      .test-div{
+        flex-direction: column;
+      }
+     .head-text h1, .footer h3{
+        font-size: 1.5rem;
+     }
   }

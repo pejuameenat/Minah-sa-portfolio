@@ -49,6 +49,14 @@ nav ul li{
     display: inline-block;
     padding: 0 1rem;
 }
+
+input[type="checkbox"]{
+    display: none;
+}
+.hide{
+    display: none;
+}
+
 .grid{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -170,6 +178,10 @@ footer{
         display: none;
     }
      
+    nav #show-menu:checked ~ ul{
+        left: 0;
+       height: 100%;
+   }
     .text-div, .img-div{
         grid-column: span 12;
     }

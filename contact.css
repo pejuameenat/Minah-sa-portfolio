@@ -112,3 +112,17 @@ footer{
 .footer-div span{
     color: cornflowerblue;
 }
+@media only screen and (max-width:992px){
+    .half-width{
+        width: 100%;
+     }
+     .half-width +.half-width{
+        margin-left: 0;
+        }
+        .head-text-container h2{
+            font-size: 1.2rem;
+            color: navy;
+        
+        }
+        
+    }
